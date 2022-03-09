@@ -12,12 +12,12 @@ const ProductCategories = () => {
     <section>
       <h4>Categories</h4>
       <div>
-        {data.results.map((category) => (
+        {data.results.map(({id, data}) => (
           <Card
-            key={category.id}
-            id={category.id}
-            name={category.data.name}
-            image={category.data.main_image.url}
+            key={id}
+            id={id}
+            name={data.name}
+            image={data.main_image.url}
           />
         ))}
       </div>
