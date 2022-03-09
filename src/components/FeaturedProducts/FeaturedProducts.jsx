@@ -1,7 +1,7 @@
 import React from "react";
-import "./FeaturedProduct.css";
 import Card from "../Card/Card";
 import { useFeaturedProducts } from "../../utils/hooks/useFeaturedProducts";
+import "./FeaturedProduct.css";
 
 const FeaturedProducts = () => {
   const { data, isLoading } = useFeaturedProducts();
