@@ -1,25 +1,25 @@
 import { useState } from 'react';
 import Card from '../../components/Card/Card';
 
-const products = ({ products }) => {
+const FilteredProducts = ({ selectedProducts }) => {
   const [isLoading, setIsLoading] = useState(true);
   setTimeout(() => {
     setIsLoading(false);
-  }, 5000);
+  }, 2000);
 
   if (isLoading) {
     return <div>{"..."}</div>;
   }
   return (
     <div>
-      {products.length > 0 ? (
-        products.map((product) => (
+      {selectedProducts.length > 0 ? (
+        selectedProducts.map((product) => (
           <Card
             key={product.id}
             name={product.data.name}
             image={product.data.mainimage.url}
+            isProduct={true}
             price={product.data.price}
-            category={product.data.category.slug}
           />
         ))
       ) : (
@@ -30,4 +30,4 @@ const products = ({ products }) => {
 };
 
 
-export default products;
+export default FilteredProducts;

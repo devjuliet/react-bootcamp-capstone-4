@@ -5,7 +5,7 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 
-const FilterByCategory = ({ renderProductsByCategory, categories }) => {
+const FilterByCategory = ({ renderProductsByCategories, categories }) => {
   return (
     <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
     <nav aria-label="nav categories">
@@ -13,7 +13,8 @@ const FilterByCategory = ({ renderProductsByCategory, categories }) => {
         {categories.map((category) => (
           <ListItem
             key={category.id}
-            onClick={() => renderProductsByCategory(category.id)}
+            selected={category.isActive}
+            onClick={() => renderProductsByCategories(category.id)}
           >
             <ListItemButton
             >
