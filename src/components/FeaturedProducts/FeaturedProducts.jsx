@@ -1,6 +1,8 @@
 import React from "react";
 import Card from "../Card/Card";
+import Button from '@mui/material/Button';
 import { useFeaturedProducts } from "../../utils/hooks/useFeaturedProducts";
+import { Link } from 'react-router-dom';
 import "./FeaturedProduct.css";
 
 const FeaturedProducts = () => {
@@ -25,6 +27,9 @@ const FeaturedProducts = () => {
           />
         ))}
       </div>
+      <Button component={Link} to="/product-list" variant="contained" color="primary">
+        View all products
+      </Button>
     </div>
   );
 };
