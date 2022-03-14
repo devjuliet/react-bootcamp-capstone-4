@@ -4,7 +4,7 @@ import { FaHeart, FaShoppingCart } from "react-icons/fa";
 export default function Header() {
   return (
     <div className='header'>
-      <a href='#default' className='logo'>
+      <a href='/' className='logo'>
         <FaHeart />
       </a>
       <input
