@@ -1,28 +1,27 @@
 import React from "react";
-import Box from '@mui/material/Box';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
+import Box from "@mui/material/Box";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
 
 const FilterByCategory = ({ renderProductsByCategories, categories }) => {
   return (
-    <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
-    <nav aria-label="nav categories">
-      <List>
-        {categories.map((category) => (
-          <ListItem
-            key={category.id}
-            selected={category.isActive}
-            onClick={() => renderProductsByCategories(category.id)}
-          >
-            <ListItemButton
+    <Box sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
+      <nav aria-label="nav categories">
+        <List>
+          {categories.map((category) => (
+            <ListItem
+              key={category.id}
+              selected={category.isActive}
+              onClick={() => renderProductsByCategories(category.id)}
             >
-              <ListItemText primary={category.data.name} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-       </List>
+              <ListItemButton>
+                <ListItemText primary={category.data.name} />
+              </ListItemButton>
+            </ListItem>
+          ))}
+        </List>
       </nav>
     </Box>
   );

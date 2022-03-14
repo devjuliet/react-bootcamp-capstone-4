@@ -1,6 +1,6 @@
-import { Route, Routes } from 'react-router-dom';
-import Home from './pages/Home';
-import ProductList from './pages/ProductList';
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home";
+import ProductList from "./pages/ProductList";
 
 const AppRouter = () => {
   return (

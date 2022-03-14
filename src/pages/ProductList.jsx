@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import Pagination from '@mui/material/Pagination';
-import Stack from '@mui/material/Stack';
-import FilteredProducts from '../components/FilteredProducts';
-import FilterByCategory from '../components/FilterByCategory';
-import categoriesData from '../mocks/en-us/product-categories.json';
-import productsData from '../mocks/en-us/products.json';
+import React, { useState, useEffect, useCallback } from "react";
+import Pagination from "@mui/material/Pagination";
+import Stack from "@mui/material/Stack";
+import FilteredProducts from "../components/FilteredProducts";
+import FilterByCategory from "../components/FilterByCategory";
+import categoriesData from "../mocks/en-us/product-categories.json";
+import productsData from "../mocks/en-us/products.json";
 
 const ProductList = () => {
   const [categories, setCategories] = useState(() => {
@@ -25,17 +25,18 @@ const ProductList = () => {
     setFilteredProducts(newProducts);
   };
 
-  const getActiveCategories =  useCallback(() => {
-    const getCategories = categories.filter(
-      (category) => category.isActive
-    )
-    .map((category) => category.id);
+  const getActiveCategories = useCallback(() => {
+    const getCategories = categories
+      .filter((category) => category.isActive)
+      .map((category) => category.id);
     return getCategories;
   }, [categories]);
 
   const categoriesSelected = (id) => {
     const modifiedCategories = categories.map((category) =>
-      category.id === id ? { ...category, isActive: !category.isActive } : category
+      category.id === id
+        ? { ...category, isActive: !category.isActive }
+        : category
     );
     setCategories(modifiedCategories);
   };

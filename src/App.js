@@ -1,7 +1,7 @@
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import AppRouter from './AppRouter';
+import AppRouter from "./AppRouter";
 import "./App.css";
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
         <Header />
         <AppRouter />
         <Footer />
-    </BrowserRouter>
+      </BrowserRouter>
     </div>
   );
 }

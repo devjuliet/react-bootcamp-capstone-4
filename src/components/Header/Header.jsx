@@ -4,20 +4,20 @@ import "./Header.css";
 
 export default function Header() {
   return (
-    <div className='header'>
-      <a href='/' className='logo'>
+    <div className="header">
+      <a href="/" className="logo">
         <FaHeart />
       </a>
       <input
-        type='search'
-        id='site-search'
-        name='q'
-        aria-label='Search through site content'
+        type="search"
+        id="site-search"
+        name="q"
+        aria-label="Search through site content"
       />
 
       <button>Search</button>
-      <div className='header-right'>
-        <a href='#shop'>
+      <div className="header-right">
+        <a href="#shop">
           <FaShoppingCart />
         </a>
       </div>

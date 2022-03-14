@@ -12,13 +12,8 @@ const ProductCategories = () => {
     <section>
       <h4>Categories</h4>
       <div>
-        {data.results.map(({id, data}) => (
-          <Card
-            key={id}
-            id={id}
-            name={data.name}
-            image={data.main_image.url}
-          />
+        {data.results.map(({ id, data }) => (
+          <Card key={id} id={id} name={data.name} image={data.main_image.url} />
         ))}
       </div>
     </section>
