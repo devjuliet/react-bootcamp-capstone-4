@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Card from '../../components/Card/Card';
+import Card from '../../components/Card';
 
 const FilteredProducts = ({ selectedProducts }) => {
   const [isLoading, setIsLoading] = useState(true);

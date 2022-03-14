@@ -1,6 +1,6 @@
 import React from "react";
 import { useProductCategories } from "../../utils/hooks/useProductCategories";
-import Card from "../Card/Card";
+import Card from "../Card";
 
 const ProductCategories = () => {
   const { data, isLoading } = useProductCategories();

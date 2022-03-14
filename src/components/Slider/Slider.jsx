@@ -1,7 +1,7 @@
 import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import { Carousel } from 'react-responsive-carousel';
 import { useFeaturedBanners } from "../../utils/hooks/useFeaturedBanners"
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 
 export default function Slider() {
   const { data, isLoading } = useFeaturedBanners();

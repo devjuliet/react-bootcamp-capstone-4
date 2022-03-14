@@ -1,5 +1,6 @@
 import React from "react";
 import "./Card.css";
+
 const Card = ({ name, image, price, category, isProduct }) => {
   return (
     <div className='content-card'>

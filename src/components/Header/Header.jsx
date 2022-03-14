@@ -1,6 +1,7 @@
 import React from "react";
-import "./Header.css";
 import { FaHeart, FaShoppingCart } from "react-icons/fa";
+import "./Header.css";
+
 export default function Header() {
   return (
     <div className='header'>

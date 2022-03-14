@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import Pagination from '@mui/material/Pagination';
 import Stack from '@mui/material/Stack';
-import FilteredProducts from '../components/FilteredProducts/FilteredProducts';
-import FilterByCategory from '../components/FilterByCategory/FilterByCategory';
+import FilteredProducts from '../components/FilteredProducts';
+import FilterByCategory from '../components/FilterByCategory';
 import categoriesData from '../mocks/en-us/product-categories.json';
 import productsData from '../mocks/en-us/products.json';
 
