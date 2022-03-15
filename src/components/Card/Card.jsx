@@ -1,8 +1,9 @@
 import React from "react";
 import "./Card.css";
+
 const Card = ({ name, image, price, category, isProduct }) => {
   return (
-    <div className='content-card'>
+    <div className="content-card">
       <img src={image} alt={name} />
       <h6>{name}</h6>
       {isProduct && (

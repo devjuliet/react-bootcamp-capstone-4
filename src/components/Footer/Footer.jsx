@@ -3,7 +3,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer id='Footer'>
+    <footer id="Footer">
       Ecommerce created during Wizeline’s Academy React Bootcamp
     </footer>
   );
