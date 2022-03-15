@@ -3,12 +3,13 @@ import Card from "../Card/Card";
 import Button from "@mui/material/Button";
 import { useFeaturedProducts } from "../../utils/hooks/useFeaturedProducts";
 import { Link } from "react-router-dom";
+import Loading from "../Loading";
 import "./FeaturedProduct.css";
 
 const FeaturedProducts = () => {
   const { data, isLoading } = useFeaturedProducts();
   if (isLoading) {
-    return <div>{"..."}</div>;
+    return <Loading />;
   }
 
   return (

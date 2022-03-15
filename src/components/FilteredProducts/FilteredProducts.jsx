@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Card from "../../components/Card";
+import Loading from "../Loading";
 
 const FilteredProducts = ({ selectedProducts }) => {
   const [isLoading, setIsLoading] = useState(true);
@@ -8,7 +9,7 @@ const FilteredProducts = ({ selectedProducts }) => {
   }, 2000);
 
   if (isLoading) {
-    return <div>{"..."}</div>;
+    return <Loading />
   }
   return (
     <div>

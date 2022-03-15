@@ -1,11 +1,12 @@
 import React from "react";
 import { useProductCategories } from "../../utils/hooks/useProductCategories";
 import Card from "../Card";
+import Loading from "../Loading";
 
 const ProductCategories = () => {
   const { data, isLoading } = useProductCategories();
   if (isLoading) {
-    return <div>{"..."}</div>;
+    return <Loading />;
   }
 
   return (
